@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_land">
+
+    <Button
+        android:id="@+id/tris"
+        android:onClick="tris"
+        android:background="@android:color/transparent"
+        android:layout_width="195dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/differenze"
+        app:layout_constraintEnd_toStartOf="@+id/labirinto"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/labirinto"
+        android:onClick="labirinto"
+        android:background="@android:color/transparent"
+        android:layout_width="195dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/impiccato"
+        app:layout_constraintEnd_toStartOf="@+id/memory"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tris"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/memory"
+        android:onClick="memory"
+        android:background="@android:color/transparent"
+        android:layout_width="195dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/puzzle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/labirinto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/differenze"
+        android:onClick="differenze"
+        android:background="@android:color/transparent"
+        android:layout_width="195dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/impiccato"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tris" />
+
+    <Button
+        android:id="@+id/impiccato"
+        android:onClick="impiccato"
+        android:background="@android:color/transparent"
+        android:layout_width="195dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/puzzle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/differenze"
+        app:layout_constraintTop_toBottomOf="@+id/labirinto" />
+
+    <Button
+        android:id="@+id/puzzle"
+        android:onClick="puzzle"
+        android:background="@android:color/transparent"
+        android:layout_width="195dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/impiccato"
+        app:layout_constraintTop_toBottomOf="@+id/memory" />
+</android.support.constraint.ConstraintLayout>
+
